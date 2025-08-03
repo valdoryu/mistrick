@@ -71,10 +71,6 @@ export const useChatStore = create<State>()(
     {
       name: 'chat-store',
       storage: createJSONStorage(() => localStorage),
-      // partialize: (state: State) => ({
-      //   chats: state.chats,
-      //   currentChatId: '',
-      // }),
     }
   )
 )
