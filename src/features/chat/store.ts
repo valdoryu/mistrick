@@ -40,7 +40,7 @@ export const useChatStore = create<State>()(
       resetChat: () => {
         const newChatId = uuidv4()
         const chats = [...get().chats, { messages: [], id: newChatId }]
-        set({ chats, input: '', currentChatId: newChatId })
+        set({ chats, currentChatId: newChatId })
       },
 
       deleteChat: (id: string) => {
